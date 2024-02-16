@@ -3,11 +3,11 @@
     <!-- ------------------------ Menu Hero Section ------------------------ -->
     <section>
         <div class="container">
-            <div class="mt-4 mt-md-0 mb-3 bg-warning text-white rounded-3">
+            <div class="mt-4 mt-md-0 mb-3 bg-primary text-white rounded-3">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8 p-5 my-auto align-center">
-                            <h1 class="display-5 fw-bold">Katalog Menu Makanan & Minuman Restawrant</h1>
+                            <h1 class="display-5 fw-bold">Katalog Menu ORAMEN</h1>
                             <p class="col-md-10">
                                 Disini kalian bisa nemuin semua menu dengan berbagai macam kategori yang dapat kalian
                                 pesan
@@ -32,7 +32,7 @@
         <div class="container" style="margin-bottom: 100px">
             <div class="row g-3">
                 <div class="col-md-4 mb-3 d-none d-md-block">
-                    <div class="flex-shrink-0 p-3 bg-warning rounded-3 sticky-top menu-filter">
+                    <div class="flex-shrink-0 p-3 bg-primary rounded-3 sticky-top menu-filter">
                         <a href="/"
                             class="
                     d-flex
@@ -65,7 +65,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="" id="1" />
                                                     <label class="form-check-label" for="1">
-                                                        Makanan
+                                                        Ramen
                                                     </label>
                                                 </div>
                                             </a>
@@ -85,41 +85,12 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="" id="3" />
                                                     <label class="form-check-label" for="3">
-                                                        Dessert
+                                                        Cemilan
                                                     </label>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="link-light rounded">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="4" />
-                                                    <label class="form-check-label" for="4">
-                                                        Seblak
-                                                    </label>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-light rounded">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="5" />
-                                                    <label class="form-check-label" for="5">
-                                                        Snack
-                                                    </label>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-light rounded">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="6" />
-                                                    <label class="form-check-label" for="6">
-                                                        Cocktail
-                                                    </label>
-                                                </div>
-                                            </a>
-                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -175,7 +146,7 @@
                         @foreach ($menus as $menu)
                             <div class="col-md-4">
                                 <div class="card card-borderless-shadow card-min-height">
-                                    <img src="{{ Storage::url($menu->image) }}"
+                                    <img src="{{ asset('menunya/'. $menu->image) }}"
                                         class="card-img-top card-img-top-menus" />
                                     <div class="card-body">
                                         <h5 class="card-title fw-bold"> {{ $menu->name }}</h5>

@@ -41,18 +41,14 @@ class MenuController extends Controller
      */
     public function store(MenuStoreRequest $request)
     {
-        $image = $request->file('image')->store('public/menus');
+        $menu = Menu::create($request->all());
 
-        $menu = Menu::create([
-            'name' => $request->name,
-            'description' => $request->description,
-            'image' => $image,
-            'price' => $request->price
-        ]);
-
-        if ($request->has('categories')) {
-            $menu->categories()->attach($request->categories);
+       if($request->hasFile('image')) {
+            $request->file('image')->move('menunya/', $request->file('image')->getClientOriginalName());
+            $menu->image = $request->file('image')->getClientOriginalName();
+            $menu->save();
         }
+        
 
         return to_route('admin.menus.index')->with('success', 'Menu created successfully.');
     }

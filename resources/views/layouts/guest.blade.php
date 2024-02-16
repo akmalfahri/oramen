@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Restawrant — Harga Kaki Lima Rasa Kaki Lima!</title>
+    <title>ORAMEN — Harga Kaki Lima Rasa Kaki Lima!</title>
 
-    <meta name="title" content="Restawrant — Harga Kaki Lima Rasa Kaki Lima!">
-    <meta name="description" content="  Restawrant adalah restoran yang menyediakan berbagai macam kategori makanan mulai dari minuman,
+    <meta name="title" content="ORAMEN — Harga Kaki Lima Rasa Kaki Lima!">
+    <meta name="description" content="  ORAMEN adalah restoran yang menyediakan berbagai macam kategori makanan mulai dari minuman,
                         dessert dan lain lain dengan harga kaki lima namun rasanya bintang lima. Outlet kita selalu
                         rame, jadi jangan lupa reservasi ya!">
     <link rel="icon" href="{{ url('cuba/assets/images/favicon.ico') }}" type="image/x-icon">
@@ -35,7 +35,7 @@
     <!-- ------------------------ Mobile Header Section ------------------------ -->
     <nav class="navbar navbar-light bg-white d-block d-sm-block d-md-block d-lg-none py-3 border-bottom">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">🍣 Restawrant</a>
+            <a class="navbar-brand fw-bold" href="#">ORAMEN</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,8 @@
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
-                        🍣 Restawrant
+                        <img src="{{ url('cuba/assets/images/logo-oramen.png') }}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                           ORAMEN
                     </h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
@@ -70,7 +71,7 @@
                     </ul>
                     <hr />
                     <div class="d-grid gap-2">
-                        <button class="btn btn-warning text-white me-2 px-5 fw-500"
+                        <button class="btn btn-primary text-white me-2 px-5 fw-500"
                             onclick="location.href='http://127.0.0.1:8000/reservation/step-one'" type="button"> <i
                                 class="fas fa-calendar-plus"></i> &nbsp; &nbsp; Buat
                             Reservasi</button>
@@ -108,11 +109,11 @@
                     <a class="nav-link link-dark text-grey px-2 no-effect-hover">|</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://wa.me/+628123456789" class="nav-link link-dark text-grey px-2" target="_blank">
-                        +628123456789</a>
+                    <a href="https://wa.me/+6281225769092" class="nav-link link-dark text-grey px-2" target="_blank">
+                        +6281225769092</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://wa.me/+628987654321" target="_blank"
+                    <a href="" target="_blank"
                         class="nav-link link-dark text-grey px-2">+628987654321</a>
                 </li>
             </ul>
@@ -122,9 +123,9 @@
     <header class="py-3 mb-4 border-bottom d-none d-sm-none d-md-none d-lg-block bg-white sticky-top">
         <div class="container d-flex flex-wrap justify-content-center">
             <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-                <span class="fs-3 fw-bold">🍣 Restawrant</span>
+                <span class="fs-3 fw-bold">ORAMEN</span>
             </a>
-            <button class="btn btn-warning text-white me-2 px-5 fw-500"
+            <button class="btn btn-primary text-white me-2 px-5 fw-500"
                 onclick="location.href='http://127.0.0.1:8000/reservation/step-one'" type="button"> <i
                     class="fas fa-calendar-plus"></i> &nbsp; &nbsp; Buat
                 Reservasi</button>
@@ -141,14 +142,13 @@
         <div class="container">
             <div class="row text-white">
                 <div class="col-md-6 border-end">
-                    <h4 class="fw-bold">🍣 Restawrant — Harga kaki lima rasa bintang lima!</h4>
+                    <h4 class="fw-bold">ORAMEN — Harga kaki lima rasa bintang lima!</h4>
                     <p class="">
-                        Restawrant adalah restoran yang menyediakan berbagai macam kategori makanan mulai dari minuman,
-                        dessert dan lain lain dengan harga kaki lima namun rasanya bintang lima. Outlet kita selalu
+                        ORAMEN adalah restoran yang menyediakan berbagai macamolahan Ramen dengan harga kaki lima namun rasanya bintang lima. Outlet kita selalu
                         rame, jadi jangan lupa reservasi ya!
                     </p>
                     <small class="d-block mb-3">
-                        &copy; 2022 Syauqizaidan — Made with laravel 9.4.1 and bootstrap 5.2.0
+                        &copy; 2023 Aknevzah
                     </small>
                 </div>
 
@@ -156,27 +156,27 @@
                     <h4 class="fw-bold mb-3">Navigasi Cepat</h4>
                     <ul class="list-unstyled">
                         <li class="mb-1">
-                            <a class="link-light text-decoration-none" href="/userlisting?srczz=&katfilt=6901">
+                            <a class="link-light text-decoration-none" href="#">
                                 Beranda
                             </a>
                         </li>
                         <li class="mb-1">
-                            <a class="link-light text-decoration-none" href="/userlisting?srczz=&katfilt=6905">
+                            <a class="link-light text-decoration-none" href="/#tentang-kami">
                                 Tentang Kami
                             </a>
                         </li>
                         <li class="mb-1">
-                            <a class="link-light text-decoration-none" href="/userlisting?srczz=&katfilt=6904">
+                            <a class="link-light text-decoration-none" href="{{ route('categories.index') }}">
                                 Kategori
                             </a>
                         </li>
                         <li class="mb-1">
-                            <a class="link-light text-decoration-none" href="/userlisting?srczz=&katfilt=6902">
+                            <a class="link-light text-decoration-none" href="{{ route('menus.index') }}">
                                 Menu
                             </a>
                         </li>
                         <li class="mb-1">
-                            <a class="link-light text-decoration-none" href="/userlisting?srczz=&katfilt=6903">
+                            <a class="link-light text-decoration-none" href="/#galeri-outlet">
                                 Galeri Outlet
                             </a>
                         </li>
@@ -191,7 +191,7 @@
                             </a>
                         </li>
                         <li class="mb-1">
-                            <a class="link-light text-decoration-none" href="#" target="_blank">
+                            <a class="link-light text-decoration-none" href="https://www.instagram.com/kedai_oramen/" target="_blank">
                                 <i class="fab fa-instagram"></i> &nbsp; Instagram
                             </a>
                         </li>

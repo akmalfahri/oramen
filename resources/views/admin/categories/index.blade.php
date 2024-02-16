@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Kategori Makanan & Minuman — Restawrant')
+@section('title', 'Kategori Makanan & Minuman — ORAMEN')
 @section('content')
 
     @push('datatable-styles')
@@ -13,7 +13,7 @@
         <div class="page-title">
             <div class="card card-absolute mt-5 mt-md-4">
                 <div class="card-header bg-primary">
-                    <h5 class="text-white">🍰 • Kategori Makanan & Minuman</h5>
+                    <h5 class="text-white">Kategori Makanan & Minuman</h5>
                 </div>
                 <div class="card-body">
                     <p>
@@ -55,7 +55,7 @@
                                                                                                                                         width: 40px;
                                                                                                                                         height: 40px;"
                                                                 class="b-r-8"
-                                                                src="{{ Storage::url($item->image) }}?colors=FAD089,FF9C5B,F5634A,ED303C,3B8183">
+                                                                src="{{ asset('categori/'. $item->image) }}?colors=FAD089,FF9C5B,F5634A,ED303C,3B8183">
                                                         </div>
                                                     </div>
                                                     <div class="flex-fill">

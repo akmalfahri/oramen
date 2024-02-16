@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Data Reservasi — Restawrant')
+@section('title', 'Data Reservasi — ORAMEN')
 @section('content')
 
     @push('datatable-styles')

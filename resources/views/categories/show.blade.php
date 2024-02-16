@@ -3,7 +3,7 @@
     <!-- ------------------------ Show Category Hero Section ------------------------ -->
     <section>
         <div class="container">
-            <div class="mt-4 mt-md-0 mb-3 bg-warning text-white rounded-3">
+            <div class="mt-4 mt-md-0 mb-3 bg-primary text-white rounded-3">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8 p-5 my-auto align-center">
@@ -16,7 +16,7 @@
                             </button>
                         </div>
                         <div class="col-md-4 my-auto p-0">
-                            <img src="{{ Storage::url($category->image) }}"
+                            <img src="{{ asset('categori/'. $category->image) }}"
                                 class="img-fluid img-jumbotron d-none d-md-block" />
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                 @foreach ($category->menus as $menu)
                     <div class="col-md-3">
                         <div class="card card-borderless-shadow card-min-height">
-                            <img src="{{ Storage::url($menu->image) }}"
+                            <img src="{{ asset('menunya/'. $menu->image) }}"
                                 class="card-img-top card-img-top-landing-page" />
                             <div class="card-body">
                                 <h5 class="card-title fw-bold"> {{ $menu->name }}</h5>

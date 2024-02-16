@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Admin Dashboard — Restawrant')
+@section('title', 'Admin Dashboard — ORAMEN')
 @section('content')
 
     @push('datatable-styles')
@@ -10,26 +10,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.3.1/dist/css/splide.min.css">
     @endpush
 
-    <div class="container-fluid">
-        <div class="row mb-4">
-            <div class="col-xl-12 col-12 mt-4">
-                <div class="splide"
-                    style="box-shadow:rgba(0, 0, 0, 0.05) 0px 0px 4px 0px, rgba(0, 0, 0, 0.1) 0px 4px 24px 0px; border-radius:8px;">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="{{ url('images/splide/admin/announcement-dashboard-images-2.png') }}"
-                                    class="d-block w-100" style="border-radius:8px;">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="{{ url('images/splide/admin/announcement-dashboard-images-3.png') }}"
-                                    class="d-block w-100" style="border-radius:8px;">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         {{-- <div class="row second-chart-list third-news-update">
             <div class="col-xl-6 col-lg-12 xl-50 morning-sec box-col-12" style="height: 200">

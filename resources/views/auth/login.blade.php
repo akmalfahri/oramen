@@ -5,15 +5,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Restawrant —  Admin Management Dashboard">
-    <meta name="description" content="  Restawrant adalah restoran yang menyediakan berbagai macam kategori makanan mulai dari minuman,
+    <meta name="title" content="ORAMEN —  Admin Management Dashboard">
+    <meta name="description" content="  ORAMEN adalah restoran yang menyediakan berbagai macam kategori makanan mulai dari minuman,
                         dessert dan lain lain dengan harga kaki lima namun rasanya bintang lima. Outlet kita selalu
                         rame, jadi jangan lupa reservasi ya!">
-    <meta name="keywords" content="Restawrant, Open Source Restaurant Website">
-    <meta name="author" content="SYAUQIZAIDAN KHAIRAN KHALAF">
+    <meta name="keywords" content="ORAMEN, Open Source Restaurant Website">
+    <meta name="author" content="Aknevzah">
     <link rel="icon" href="{{ url('cuba/assets/images/favicon.ico') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ url('cuba/assets/images/icon-192.png') }}" type="image/x-icon">
-    <title>Masuk Aplikasi - Restawrant</title>
+    <title>Masuk Aplikasi - ORAMEN</title>
     @include('includes.backend.style')
 </head>
 
@@ -29,7 +29,7 @@
                     <div class="login-main col-10 col-md-10">
                         <form class="theme-form" method="POST" action="{{ route('login') }}">
                             @csrf
-                            <h1>🍣</h1>
+                            <h1></h1>
                             <h4>Login untuk masuk dashboard</h4>
                             <p class="mb-2">Masukkan email & password kamu buat login</p>
 

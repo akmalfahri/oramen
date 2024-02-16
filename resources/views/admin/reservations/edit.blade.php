@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Tambah Reservasi Baru — Restawrant')
+@section('title', 'Tambah Reservasi Baru — ORAMEN')
 @section('content')
 
     @push('create-article-styles')

@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Kategori Makanan & Minuman — Restawrant')
+@section('title', 'Kategori Makanan & Minuman — ORAMEN')
 @section('content')
 
     @push('datatable-styles')
@@ -13,7 +13,7 @@
         <div class="page-title">
             <div class="card card-absolute mt-5 mt-md-4">
                 <div class="card-header bg-primary">
-                    <h5 class="text-white">🪑 • Data Meja</h5>
+                    <h5 class="text-white">Data Meja</h5>
                 </div>
                 <div class="card-body">
                     <p>

@@ -43,6 +43,7 @@ header {
     padding: 20px 0;
     text-align: center;
 }
+
 .logo-list img {
     display: inline-block;
     max-width: 85%;
@@ -52,6 +53,7 @@ header {
     -moz-filter: grayscale(100);
     filter: grayscale(100);
 }
+
 .logo-list img:hover {
     filter: none;
 }
@@ -73,11 +75,9 @@ header {
     left: 0;
     position: absolute;
     top: 0;
-
     /* Take full size */
     height: 100%;
     width: 100%;
-
     /* Center the content */
     align-items: center;
     display: flex;
@@ -219,7 +219,7 @@ header {
 }
 
 footer {
-    background-color: #fcca29;
+    background-color: #2996fc;
 }
 
 /* Custom Utility Styles */

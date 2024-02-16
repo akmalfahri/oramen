@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Edit Data Meja — Restawrant')
+@section('title', 'Edit Data Meja — ORAMEN')
 @section('content')
 
     @push('create-article-styles')
@@ -14,7 +14,7 @@
             <div class="page-title">
                 <div class="card card-absolute mt-5 mt-md-4">
                     <div class="card-header bg-primary">
-                        <h5 class="text-white">🪑 • Edit Meja Baru</h5>
+                        <h5 class="text-white">Edit Meja Baru</h5>
                     </div>
                     <div class="card-body">
                         <p>

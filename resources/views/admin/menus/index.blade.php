@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Katalog Menu Makanan & Minuman — Restawrant')
+@section('title', 'Katalog Menu Makanan & Minuman — ORAMEN')
 @section('content')
 
     @push('datatable-styles')
@@ -13,7 +13,7 @@
         <div class="page-title">
             <div class="card card-absolute mt-5 mt-md-4">
                 <div class="card-header bg-primary">
-                    <h5 class="text-white">🍔 • Katalog Menu Makanan & Minuman</h5>
+                    <h5 class="text-white">Katalog Menu Makanan & Minuman</h5>
                 </div>
                 <div class="card-body">
                     <p>
@@ -45,24 +45,22 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @forelse ($menus as $item)
-                                        <tr>
+                                    @forelse ($menus as $item )
+                                     <tr>
                                             <td>
                                                 <div class="d-flex py-1 align-items-center">
                                                     <div class="avatars mr-2">
                                                         <div class="avatar ratio">
                                                             <img style="object-fit: cover;
-                                                                                                                                                                                        width: 40px;
-                                                                                                                                                                                     height: 40px;"
+                                                                                                                                        width: 40px;
+                                                                                                                                        height: 40px;"
                                                                 class="b-r-8"
-                                                                src="{{ Storage::url($item->image) }}?colors=FAD089,FF9C5B,F5634A,ED303C,3B8183">
+                                                                src="{{ asset('menunya/'. $item->image) }}?colors=FAD089,FF9C5B,F5634A,ED303C,3B8183">
                                                         </div>
-                                                    </div>
-                                                    <div class="flex-fill">
+                                                        <div class="flex-fill">
                                                         <div class="font-weight-bold">&nbsp; {{ $item->name }}</div>
                                                     </div>
-                                                </div>
-                                            </td>
+                                           
                                             <td>Rp.{{ substr(strip_tags(htmlspecialchars_decode($item->price)), 0, 60) }}.000,00
                                             </td>
                                             <td>

@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Tambah Kategori Baru — Restawrant')
+@section('title', 'Tambah Kategori Baru — ORAMEN')
 @section('content')
 
     @push('create-article-styles')
@@ -15,7 +15,7 @@
             <div class="page-title">
                 <div class="card card-absolute mt-5 mt-md-4">
                     <div class="card-header bg-primary">
-                        <h5 class="text-white">🍕 • Tambah Kategori Baru</h5>
+                        <h5 class="text-white">Tambah Kategori Baru</h5>
                     </div>
                     <div class="card-body">
                         <p>
@@ -86,7 +86,7 @@
                                                         aria-describedby="inputGroupFileAddon01" accept="image/*">>
                                                     <label class="custom-file-label" for="inputGroupFile01">Pilih file
                                                         gambar yang
-                                                        akan kamu upload ..</label>
+                                                        akan kamu upload..</label>
                                                 </div>
                                             </div>
                                         </div>
